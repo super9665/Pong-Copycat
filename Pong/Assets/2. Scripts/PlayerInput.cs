@@ -17,7 +17,7 @@ public class PlayerInput : MonoBehaviour
     {
         move = Input.GetAxis("Horizontal"); // A, D 또는 좌우 화살표 키로 move값을 받아옴( -1, 1)
         if (move != 0) {
-            Debug.Log("플레이어 속도 : " + move);
+            // Debug.Log("플레이어 속도 : " + move);
         }
     }
 }
