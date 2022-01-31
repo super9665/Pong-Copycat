@@ -23,7 +23,8 @@ public class BallMove : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        if (ballRigidbody.velocity.magnitude <speed) {
+        // 공 속도를 일정하게 유지
+        if (ballRigidbody.velocity.magnitude < speed - 0.5f) {
             ballRigidbody.velocity = lastVelocity.normalized * speed;
         }
         lastVelocity = ballRigidbody.velocity; // 공 속도 지속적으로 저장하여 충돌 시 사용
